@@ -1,0 +1,29 @@
+{
+  "name": "calendar-widget",
+  "version": "0.0.1",
+  "description": "Electron wrap for google calendar",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Damir Nabiullin",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.3.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.dalena.calendar-widget",
+    "win": {
+      "target": "nsis",
+      "icon": "Images/icon.ico"
+    },
+    "directories": {
+      "output": "build"
+    }
+  },
+  "productName": "Google Calendar Widget"
+}
